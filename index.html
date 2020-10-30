@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMDb Project</title>
+
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+
+<body>
+    <form id="form" action="">
+        <label for="search">
+            <h1>Procure por qualquer filme</h1>
+        </label>
+        <input type="text" placeholder="Nome do Filme" id="search">
+        <button type="submit">Procurar</button>
+        </fieldset>
+    </form>
+
+    <div class="moviesContainer">
+        <main id="moviesId">
+        </main>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="src/scripts/scripts.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+:root {
+    --bg: #282a36;
+    --fg: #f8f8f2;
+    --selection: #44475a;
+    --comment: #6272a4;
+    --cyan: #8be9fd;
+    --green: #50fa7b;
+    --orange: #ffb86c;
+    --pink: #ff79c6;
+    --purple: #bd93f9;
+    --red: #ff5555;
+    --yellow: #f1fa8c;
+
+    font-family: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+#form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+#form label h1 {
+    text-align: center;
+    text-transform: capitalize;
+    /* margin-bottom: 12px; */
+    color: var(--purple);
+}
+
+#form input {
+    background-color: var(--fg);
+    color: var(--comment);
+    text-transform: capitalize;
+    text-align: center;
+    width: 90%;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    margin-bottom: 8px;
+}
+
+#form button {
+    background-color: var(--selection);
+    color: var(--comment);
+    text-transform: capitalize;
+    cursor: pointer;
+    /* width: 30%; */
+    border: none;
+    padding: 12px 48px;
+    border-radius: 12px;
+}
+
+#form button:hover {
+    background-color: var(--green);
+    color: var(--selection);
+}
+
+.moviesContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.moviesContainer #moviesId {
+    background-color: var(--selection);
+    padding: 12px;
+    border-radius: 12px;
+    color: var(--fg);
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.movieContainer {
+    margin: 6px;
+    padding: 12px;
+    background: var(--bg);
+    /* text-align: center; */
+    max-width: 202px;
+    border-radius: 12px;
+}
+
+.movieContainer img {
+    width: 100%;
+    height: 270px;
+    border-radius: 12px;
+}
+
+.movieContainer h4 {
+    margin: 6px 0;
+    text-align: center;
+}
+
+.movie {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.btn-movie {
+    background-color: var(--purple);
+    color: var(--fg);
+    text-transform: capitalize;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.btn-movie:hover {
+    background-color: var(--green);
+    color: var(--selection);
+}
+
+/* #moviesId {
+    display: flex;
+} */
+
+.movieSelected {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: nowrap;
+    text-transform: capitalize;
+}
+
+.movieSelected img {
+    width: 302px;
+    margin-right: 12px;
+    border-radius: 12px;
+}
+
+.movieSelected .d1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.movieSelected .d1 h4 {
+    align-self: center;
+    font-weight: 900;
+    letter-spacing: 2px;
+    line-height: 12px;
+    margin: 8px 0;
+}
+
+.movieSelected .d1 ul li strong {
+    font-weight: 700;
+}
+
+.movieSelected .d1 ul li {
+    list-style: none;
+    font-weight: 300;
+}
+
+.sinopse {
+    margin-top: 18px;
+}
+
+.sinopse p {
+    margin-bottom: 18px;
+    font-weight: 300;
+}
+
+.buttons {
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons a {
+    width: 162px;
+}
+
+/* @media (min-width: 425) {
+    .movieSelected {
+        display: block;
+        flex-wrap: unset;
+    }
+
+} */
